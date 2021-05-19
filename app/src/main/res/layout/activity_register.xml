@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#F3F3F3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_600sdp"
+        android:background="#F3F3F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_register"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:background="@drawable/c_item1"
+            android:layout_marginBottom="@dimen/_400sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+            <EditText
+                android:id="@+id/et_nama_register"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:hint="Nama lengkap"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_10ssp"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:background="@drawable/bg_2"
+                android:layout_marginBottom="@dimen/_200sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+                <EditText
+                    android:id="@+id/et_jeniskelamin_register"
+                    android:layout_width="@dimen/_250sdp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:hint="Jenis kelamin"
+                    android:padding="@dimen/_10sdp"
+                    android:textSize="@dimen/_10ssp"
+                    android:inputType="textAutoComplete"
+                    android:textColor="@color/black"
+                    android:background="@drawable/bg_2"
+                    android:layout_marginBottom="@dimen/_100sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                    <EditText
+                        android:id="@+id/et_email_register"
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="@dimen/_32sdp"
+                        android:hint="Email valid"
+                        android:padding="@dimen/_10sdp"
+                        android:textSize="@dimen/_10ssp"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/black"
+                        android:background="@drawable/bg_2"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                        <EditText
+                            android:id="@+id/et_password_register"
+                            android:layout_width="@dimen/_250sdp"
+                            android:layout_height="@dimen/_32sdp"
+                            android:hint="Password min 8 karakter"
+                            android:padding="@dimen/_10sdp"
+                            android:textSize="@dimen/_10ssp"
+                            android:inputType="textPassword"
+                            android:textColor="@color/black"
+                            android:background="@drawable/bg_2"
+                            android:layout_marginTop="@dimen/_100sdp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+
+                            <Button
+                                android:id="@+id/btn_register"
+                                android:layout_width="@dimen/_250sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:text="Register"
+                                android:textSize="@dimen/_12ssp"
+                                android:textColor="@color/white"
+                                android:background="@drawable/bg_1"
+                                android:layout_marginTop="@dimen/_200sdp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
